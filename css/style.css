@@ -309,7 +309,8 @@ ul, ol {
   color: #FFFFFF;
   margin-right: 27px;
 }
-.header__top .soc {
+
+.header__soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +319,7 @@ ul, ol {
           align-items: center;
   margin-left: auto;
 }
-.header__top .soc .item {
+.header__soc .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,7 +335,7 @@ ul, ol {
   border-radius: 3px;
   margin-left: 9px;
 }
-.header__top .soc .item:nth-child(1) {
+.header__soc .item:nth-child(1) {
   margin-left: 0;
 }
 
@@ -1938,7 +1939,170 @@ ul, ol {
   text-decoration: underline;
 }
 
+.header__burgir {
+  display: none;
+}
+
+.mobile_menu {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile_menu {
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 86px;
+    left: 0;
+    z-index: 99;
+    background: #FFFFFF;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .mobile_menu .wrap {
+    padding: 32px 15px 48px;
+  }
+  .mobile_menu .header__search {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 36px;
+  }
+  .mobile_menu .top_ul {
+    margin-bottom: 34px;
+  }
+  .mobile_menu .top_ul .item {
+    display: block;
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #253245;
+  }
+  .mobile_menu .top_ul .li:last-child .item {
+    margin-bottom: 0;
+  }
+  .mobile_menu .bottom_ul {
+    margin-bottom: 34px;
+  }
+  .mobile_menu .bottom_ul .item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #253245;
+    margin-bottom: 22px;
+  }
+  .mobile_menu .bottom_ul .li:last-child .item {
+    margin-bottom: 0;
+  }
+  .mobile_menu .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .mobile_menu .header__language {
+    display: block;
+  }
+  .mobile_menu .header__language .btn {
+    width: 57px;
+    height: 40px;
+    background: #FBF4FF;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #253245;
+  }
+  .mobile_menu .header__language .btn svg path {
+    fill: #253245;
+  }
+  .mobile_menu .header__email {
+    display: block;
+    margin-bottom: 26px;
+  }
+  .mobile_menu .header__phone {
+    display: block;
+  }
+
+  .header__soc {
+    margin-left: 0;
+  }
+  .header__soc .item {
+    background: #FBF4FF;
+  }
+
+  .mobile_menu.active {
+    height: calc(100% - 86px);
+    overflow-y: auto;
+  }
+
+  .header__burgir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: auto;
+    width: 32px;
+    height: 25px;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+  }
+  .header__burgir span {
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #253245;
+    border-radius: 21px;
+  }
+
+  .header__burgir.active span:nth-child(2) {
+    display: none;
+  }
+  .header__burgir.active span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .header__burgir.active span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
   section {
     display: none;
   }
@@ -1956,7 +2120,16 @@ ul, ol {
   }
 
   .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     height: auto;
+  }
+
+  .main {
+    padding-top: 86px;
   }
 
   .header__bottom {
