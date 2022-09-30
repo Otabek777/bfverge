@@ -2288,8 +2288,36 @@ ul, ol {
 }
 
 .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.footer__bottom .wrap {
   max-width: 456px;
   width: 100%;
+}
+.footer__bottom .right {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__bottom .right .link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.footer__bottom .right .link:hover {
+  text-decoration: underline;
+}
+.footer__bottom .right img {
+  margin-left: 12px;
 }
 .footer__bottom .copy {
   font-weight: 400;
