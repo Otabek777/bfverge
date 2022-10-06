@@ -996,6 +996,67 @@ ul, ol {
   color: #FFFFFF;
 }
 
+.hepl_age {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+.hepl_age p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #253245;
+  margin-right: 11px;
+}
+.hepl_age .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 122px;
+  height: 39px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4ED;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hepl_age .wrap .input {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.hepl_age .wrap .input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 126%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  padding-left: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #253245;
+}
+.hepl_age .wrap .input span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #253245;
+  opacity: 0.54;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+}
+.hepl_age .wrap .input:nth-child(1) {
+  border-right: 1px solid #E4E4ED;
+}
+
 .help__box {
   display: -webkit-box;
   display: -ms-flexbox;
