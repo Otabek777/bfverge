@@ -73,3 +73,37 @@ $(".footer__phone .btn").click(function(){
 $(".bottom_ul .li").click(function(){
     $(this).toggleClass("open");
 });
+
+if(document.querySelector(".help__tab")) {
+    // Tab
+    function tabFun(num) {
+        if(document.querySelector("#tab-btn-" + num)) {
+            $("#tab-btn-" + num).click(function() {
+                $(".tab-btn-all").removeClass("active");
+                $(".tab-block-all").removeClass("active");
+                $(this).addClass("active");
+                $("#tab-block-" + num).addClass("active");
+            });
+        };
+    };
+    tabFun("1");
+    tabFun("2");
+    tabFun("3");
+    tabFun("4");
+    tabFun("5");
+    tabFun("6");
+    tabFun("7");
+    tabFun("8");
+    tabFun("9");
+    tabFun("10");
+}
+if(document.querySelector(".help_page__wrap")) {
+    $(".help_page__wrap .btn").click(function() {
+        $("#modal-3").addClass("active");
+        $("body").addClass("hidden");
+        $(".modal__close").click(function() {
+            $("#modal-3").removeClass("active");
+            $("body").removeClass("hidden");
+        });
+    });
+};

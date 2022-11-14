@@ -389,101 +389,382 @@
             <div class="container">
                 <p class="title_h2">Выберите, кому хотите помочь</p>
                 <div class="help__tab">
-                    <a href="#" class="btn">Все программы</a>
-                    <a href="#" class="btn active">Детям</a>
-                    <a href="#" class="btn">Ветеранам и пожилым</a>
-                    <a href="#" class="btn">Животным</a>
+                    <button class="btn tab-btn-all" id="tab-btn-1">Все программы</button>
+                    <button class="btn tab-btn-all active" id="tab-btn-2">Детям</button>
+                    <button class="btn tab-btn-all" id="tab-btn-3">Ветеранам и пожилым</button>
+                    <button class="btn tab-btn-all" id="tab-btn-4">Животным</button>
                 </div>
-                <div class="help__box">
-                    <div class="help__block">
-                        <div class="img">
-                            <img src="img/children1.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="wrap">
-                                <p class="title">Оказываем паллиативную помощь детям и молодым взрослым</p>
-                                <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
-                                <div class="input">
-                                    <p class="h5">
-                                        <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
-                                    </p>
-                                    <div class="line">
-                                        <span style="width: 30%;"></span>
+                <div class="tab-block-all" id="tab-block-1">
+                    <div class="help__box">
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оказываем паллиативную помощь детям и молодым взрослым</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
                             </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="btn">Хочу помочь</a>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оплатим реабилитацию детям с ДЦП и поражениями ЦНС</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Адресная помощь тяжелобольным детям</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="help__block">
-                        <div class="img">
-                            <img src="img/children2.png" alt="">
+                    <div class="help__paginator">
+                        <a href="#" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M7 13L1 7L7 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                        <div class="wrap">
+                            <a href="#" class="link">1</a>
+                            <a href="#" class="link">2</a>
+                            <a href="#" class="link">3</a>
+                            <a href="#" class="link">4</a>
+                            <a href="#" class="link active">5</a>
+                            <a href="#" class="link">6</a>
+                            <a href="#" class="link">7</a>
+                            <a href="#" class="link">8</a>
+                            <a href="#" class="link">9</a>
                         </div>
-                        <div class="content">
-                            <div class="wrap">
-                                <p class="title">Оплатим реабилитацию детям с ДЦП и поражениями ЦНС</p>
-                                <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
-                                <div class="input">
-                                    <p class="h5">
-                                        <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
-                                    </p>
-                                    <div class="line">
-                                        <span style="width: 30%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="btn">Хочу помочь</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="help__block">
-                        <div class="img">
-                            <img src="img/children3.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="wrap">
-                                <p class="title">Адресная помощь тяжелобольным детям</p>
-                                <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
-                                <div class="input">
-                                    <p class="h5">
-                                        <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
-                                    </p>
-                                    <div class="line">
-                                        <span style="width: 30%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="btn">Хочу помочь</a>
-                            </div>
-                        </div>
+                        <a href="#" class="right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="help__paginator">
-                    <a href="#" class="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-                            <path d="M7 13L1 7L7 1" stroke="#604D9E"/>
-                        </svg>
-                    </a>
-                    <div class="wrap">
-                        <a href="#" class="link">1</a>
-                        <a href="#" class="link">2</a>
-                        <a href="#" class="link">3</a>
-                        <a href="#" class="link">4</a>
-                        <a href="#" class="link active">5</a>
-                        <a href="#" class="link">6</a>
-                        <a href="#" class="link">7</a>
-                        <a href="#" class="link">8</a>
-                        <a href="#" class="link">9</a>
+                <div class="tab-block-all active" id="tab-block-2">
+                    <div class="help__box">
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оказываем паллиативную помощь детям и молодым взрослым</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оплатим реабилитацию детям с ДЦП и поражениями ЦНС</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Адресная помощь тяжелобольным детям</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-                            <path d="M1 13L7 7L1 1" stroke="#604D9E"/>
-                        </svg>
-                    </a>
+                    <div class="help__paginator">
+                        <a href="#" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M7 13L1 7L7 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                        <div class="wrap">
+                            <a href="#" class="link">1</a>
+                            <a href="#" class="link">2</a>
+                            <a href="#" class="link">3</a>
+                            <a href="#" class="link">4</a>
+                            <a href="#" class="link active">5</a>
+                            <a href="#" class="link">6</a>
+                            <a href="#" class="link">7</a>
+                            <a href="#" class="link">8</a>
+                            <a href="#" class="link">9</a>
+                        </div>
+                        <a href="#" class="right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-block-all" id="tab-block-3">
+                    <div class="help__box">
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оказываем паллиативную помощь детям и молодым взрослым</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оплатим реабилитацию детям с ДЦП и поражениями ЦНС</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Адресная помощь тяжелобольным детям</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help__paginator">
+                        <a href="#" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M7 13L1 7L7 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                        <div class="wrap">
+                            <a href="#" class="link">1</a>
+                            <a href="#" class="link">2</a>
+                            <a href="#" class="link">3</a>
+                            <a href="#" class="link">4</a>
+                            <a href="#" class="link active">5</a>
+                            <a href="#" class="link">6</a>
+                            <a href="#" class="link">7</a>
+                            <a href="#" class="link">8</a>
+                            <a href="#" class="link">9</a>
+                        </div>
+                        <a href="#" class="right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-block-all" id="tab-block-4">
+                    <div class="help__box">
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оказываем паллиативную помощь детям и молодым взрослым</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Оплатим реабилитацию детям с ДЦП и поражениями ЦНС</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help__block">
+                            <div class="img">
+                                <img src="img/children3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="wrap">
+                                    <p class="title">Адресная помощь тяжелобольным детям</p>
+                                    <p class="text">В детском хосписе фонда «Дом с маяком» неизлечимо больным детям помогают облегчить боль, приобретают для них...</p>
+                                    <div class="input">
+                                        <p class="h5">
+                                            <span class="blue">59 653 ₽</span> из <span class="black">274 900 ₽</span>
+                                        </p>
+                                        <div class="line">
+                                            <span style="width: 30%;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn">Хочу помочь</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help__paginator">
+                        <a href="#" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M7 13L1 7L7 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                        <div class="wrap">
+                            <a href="#" class="link">1</a>
+                            <a href="#" class="link">2</a>
+                            <a href="#" class="link">3</a>
+                            <a href="#" class="link">4</a>
+                            <a href="#" class="link active">5</a>
+                            <a href="#" class="link">6</a>
+                            <a href="#" class="link">7</a>
+                            <a href="#" class="link">8</a>
+                            <a href="#" class="link">9</a>
+                        </div>
+                        <a href="#" class="right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#604D9E"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

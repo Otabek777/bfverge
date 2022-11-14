@@ -325,6 +325,22 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="modal-3">
+        <div class="modal__block2">
+            <button class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <rect x="17.6777" y="19.799" width="25" height="3" rx="1.5" transform="rotate(-135 17.6777 19.799)" fill="#A8ADB5"/>
+                    <rect y="17.6777" width="25" height="3" rx="1.5" transform="rotate(-45 0 17.6777)" fill="#A8ADB5"/>
+                </svg>
+            </button>
+            <div class="modal__title">
+                <p class="h2">Спасибо!</p>
+            </div>
+            <p class="modal__title2" style="margin-bottom: 0;">
+                На ваш e-mail отправлена ссылка, перейдите по ней, пожалуйста.
+            </p>
+        </div>
+    </div>
     <main class="main">
         <section class="help_page">
             <div class="container">
@@ -339,12 +355,12 @@
                 </div>
                 <p class="title_h2">Помочь</p>
                 <div class="help__tab">
-                    <a href="#" class="btn active">Оплата онлайн</a>
-                    <a href="#" class="btn">Помощь по СМС</a>
-                    <a href="#" class="btn">Перевод на р/с фонда</a>
-                    <a href="#" class="btn">Отписаться от ежемесячной подписки</a>
+                    <button class="btn tab-btn-all active" id="tab-btn-1">Оплата онлайн</button>
+                    <button class="btn tab-btn-all" id="tab-btn-2">Помощь по СМС</button>
+                    <button class="btn tab-btn-all" id="tab-btn-3">Перевод на р/с фонда</button>
+                    <button class="btn tab-btn-all" id="tab-btn-4">Отписаться от ежемесячной подписки</button>
                 </div>
-                <div class="help_page__wrap">
+                <div class="help_page__wrap tab-block-all active" id="tab-block-1">
                     <div class="input_wrap">
                         <p class="title">Выберите тип пожертвования</p>
                         <div class="box">
@@ -398,6 +414,134 @@
                         <p class="title">Комментарий</p>
                         <textarea class="textarea" placeholder="Здравствуйте..."></textarea>
                     </div> -->
+                    <div class="box">
+                        <button class="btn">Отправить</button>
+                        <p class="h6">При нажатии на “Отправить” соглашаюсь на обработку <a href="#">персональных данных</a></p>
+                    </div>
+                </div>
+                <div class="help_page__wrap tab-block-all" id="tab-block-2">
+                    <div class="input_wrap">
+                        <p class="title">Выберите тип пожертвования</p>
+                        <div class="box">
+                            <div class="checkbox">
+                                <input type="radio" id="1" name="check">
+                                <label for="1">Ежемесячные платежи</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" id="2" name="check" checked>
+                                <label for="2">Разовые платежи</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <p class="title">Сумма пожертвования</p>
+                        <div class="box">
+                            <div class="checkbox2">
+                                <input type="radio" id="1112" name="check22">
+                                <label for="1112">100р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2212" name="check22">
+                                <label for="2212">300р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2312" name="check22">
+                                <label for="2312">500р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2412" name="check22">
+                                <label for="2412">1000р</label>
+                            </div>
+                        </div>
+                        <input type="text" class="input" placeholder="Другая сумма">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="22212" checked>
+                        <label for="22212">Помочь анонимно</label>
+                    </div>
+                    <div class="box">
+                        <div class="input_wrap">
+                            <p class="title">Ваше имя</p>
+                            <input type="text" class="input" placeholder="">
+                        </div>
+                        <div class="input_wrap">
+                            <p class="title">Ваша фамилия</p>
+                            <input type="text" class="input" placeholder="">
+                        </div>
+                    </div>
+                    <!-- <div class="input_wrap">
+                        <p class="title">Комментарий</p>
+                        <textarea class="textarea" placeholder="Здравствуйте..."></textarea>
+                    </div> -->
+                    <div class="box">
+                        <button class="btn">Отправить</button>
+                        <p class="h6">При нажатии на “Отправить” соглашаюсь на обработку <a href="#">персональных данных</a></p>
+                    </div>
+                </div>
+                <div class="help_page__wrap tab-block-all" id="tab-block-3">
+                    <div class="input_wrap">
+                        <p class="title">Выберите тип пожертвования</p>
+                        <div class="box">
+                            <div class="checkbox">
+                                <input type="radio" id="1" name="check">
+                                <label for="1">Ежемесячные платежи</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" id="2" name="check" checked>
+                                <label for="2">Разовые платежи</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <p class="title">Сумма пожертвования</p>
+                        <div class="box">
+                            <div class="checkbox2">
+                                <input type="radio" id="1112" name="check22">
+                                <label for="1112">100р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2212" name="check22">
+                                <label for="2212">300р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2312" name="check22">
+                                <label for="2312">500р</label>
+                            </div>
+                            <div class="checkbox2">
+                                <input type="radio" id="2412" name="check22">
+                                <label for="2412">1000р</label>
+                            </div>
+                        </div>
+                        <input type="text" class="input" placeholder="Другая сумма">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="22212" checked>
+                        <label for="22212">Помочь анонимно</label>
+                    </div>
+                    <div class="box">
+                        <div class="input_wrap">
+                            <p class="title">Ваше имя</p>
+                            <input type="text" class="input" placeholder="">
+                        </div>
+                        <div class="input_wrap">
+                            <p class="title">Ваша фамилия</p>
+                            <input type="text" class="input" placeholder="">
+                        </div>
+                    </div>
+                    <!-- <div class="input_wrap">
+                        <p class="title">Комментарий</p>
+                        <textarea class="textarea" placeholder="Здравствуйте..."></textarea>
+                    </div> -->
+                    <div class="box">
+                        <button class="btn">Отправить</button>
+                        <p class="h6">При нажатии на “Отправить” соглашаюсь на обработку <a href="#">персональных данных</a></p>
+                    </div>
+                </div>
+                <div class="help_page__wrap tab-block-all" id="tab-block-4">
+                    <div class="input_wrap">
+                        <p class="title">Ваша почта</p>
+                        <input type="email" class="input" placeholder="" required>
+                    </div>                    
                     <div class="box">
                         <button class="btn">Отправить</button>
                         <p class="h6">При нажатии на “Отправить” соглашаюсь на обработку <a href="#">персональных данных</a></p>
